@@ -8,8 +8,6 @@ Live deployment: _Not published in this repository yet. Add the Vercel URL here 
 
 Repository: https://github.com/dhineshbuilder/Invoice_generator
 
-Lovable project: https://lovable.dev/projects/abd02b36-3c80-4e18-b930-1de483d902bf
-
 ## Screenshots
 
 ### Login
