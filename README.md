@@ -4,7 +4,7 @@ A lightweight web-based point-of-sale and receipt printing app for laundry and d
 
 ## Links
 
-Live deployment: https://invoice-generatorsystem.netlify.app/
+Live deployment: https://invoice-generator-sage-five.vercel.app
 
 Repository: https://github.com/dhineshbuilder/Invoice_generator
 
