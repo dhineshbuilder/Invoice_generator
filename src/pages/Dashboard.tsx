@@ -9,9 +9,6 @@ import { formatDateTime, formatINR } from "@/utils/format";
 import { Link, useNavigate } from "react-router-dom";
 import { Seo } from "@/components/Seo";
 import { useIsMobile } from "@/hooks/use-mobile";
-import * as XLSX from "xlsx";
-import jsPDF from "jspdf";
-import autoTable from "jspdf-autotable";
 
 export default function Dashboard() {
   const [orders, setOrders] = useState<Order[]>([]);
@@ -54,7 +51,8 @@ export default function Dashboard() {
     }
   };
 
-  const exportToExcel = () => {
+  const exportToExcel = async () => {
+    const XLSX = await import("xlsx");
     const data = orders.map((order) => {
       const subtotal = order.items.reduce((s, it) => s + it.qty * it.price, 0);
       const roundOff = order.roundOff || 0;
@@ -78,7 +76,11 @@ export default function Dashboard() {
   XLSX.writeFile(wb, `orders_export_${new Date().toISOString().split("T")[0]}.xlsx`);
   };
 
-  const exportToPDF = () => {
+  const exportToPDF = async () => {
+    const [{ default: jsPDF }, { default: autoTable }] = await Promise.all([
+      import("jspdf"),
+      import("jspdf-autotable"),
+    ]);
     const doc = new jsPDF();
     doc.text("Orders Export", 14, 15);
 

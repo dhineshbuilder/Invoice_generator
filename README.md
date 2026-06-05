@@ -4,7 +4,7 @@ A lightweight web-based point-of-sale and receipt printing app for Vela Dry Wash
 
 ## Links
 
-Live deployment: _Not published in this repository yet. Add the Vercel URL here after deployment._
+Live deployment: https://invoice-generatorsystem.netlify.app/
 
 Repository: https://github.com/dhineshbuilder/Invoice_generator
 
