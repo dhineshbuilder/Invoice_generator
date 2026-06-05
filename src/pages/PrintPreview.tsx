@@ -24,7 +24,7 @@ export default function PrintPreview() {
   if (!order) {
     return (
       <main className="min-h-screen flex items-center justify-center">
-        <Seo title="Print Preview | Vela Dry Wash POS" description="80mm thermal receipt preview." canonicalPath={`/print/${id ?? ""}`} />
+        <Seo title="Print Preview | Laundry & Dry Wash POS" description="80mm thermal receipt preview." canonicalPath={`/print/${id ?? ""}`} />
         <div className="space-y-4 text-center">
           <p>No order data found.</p>
           <Button onClick={() => navigate("/order")}>Back to Order</Button>
@@ -39,10 +39,10 @@ export default function PrintPreview() {
 
   return (
     <main className="min-h-screen flex flex-col items-center py-2">
-      <Seo title={`Print: ${order.id} | Vela Dry Wash POS`} description="80mm thermal receipt preview." canonicalPath={`/print/${order.id}`} />
+      <Seo title={`Print: ${order.id} | Laundry & Dry Wash POS`} description="80mm thermal receipt preview." canonicalPath={`/print/${order.id}`} />
       <div className="receipt-root">
         <div className="receipt-center">
-          <div className="receipt-title">VELA DRY WASH</div>
+          <div className="receipt-title">LAUNDRY & DRY WASH</div>
           <div className="receipt-small receipt-muted">Fully Mechanised Laundry Enterprise</div>
           <div className="receipt-small">Arasa Thottam, Sellipalayam,</div>
           <div className="receipt-small">Uthukuli - 638 751</div>

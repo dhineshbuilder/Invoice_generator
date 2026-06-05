@@ -91,7 +91,7 @@ export default function Dashboard() {
 
   return (
     <main className="min-h-screen bg-background">
-      <Seo title="Dashboard | Vela Dry Wash POS" description="View all transactions and reprint receipts." canonicalPath="/dashboard" />
+      <Seo title="Dashboard | Laundry & Dry Wash POS" description="View all transactions and reprint receipts." canonicalPath="/dashboard" />
       <header className="container py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <h1 className="text-2xl md:text-3xl font-bold">All Orders ({orders.length})</h1>
         <div className="flex gap-2 flex-wrap justify-end w-full md:w-auto">

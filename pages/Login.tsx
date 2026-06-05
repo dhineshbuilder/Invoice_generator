@@ -13,14 +13,14 @@ export default function Login() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const authed = localStorage.getItem("vdw_auth") === "true";
+    const authed = localStorage.getItem("laundry_dry_wash_auth") === "true";
     if (authed) navigate("/order", { replace: true });
   }, [navigate]);
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (username === "admin" && password === "Admin1234") {
-      localStorage.setItem("vdw_auth", "true");
+      localStorage.setItem("laundry_dry_wash_auth", "true");
       navigate("/order");
     } else {
       setError("Invalid credentials (hint: admin/admin)");
@@ -29,10 +29,10 @@ export default function Login() {
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-background px-4">
-      <Seo title="Login | Vela Dry Wash POS" description="Sign in to Vela Dry Wash POS to create orders and print thermal receipts." canonicalPath="/login" />
+      <Seo title="Login | Laundry & Dry Wash POS" description="Sign in to Laundry & Dry Wash POS to create orders and print thermal receipts." canonicalPath="/login" />
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader className="bg-primary text-primary-foreground rounded-t-lg py-6">
-          <CardTitle className="text-center text-2xl md:text-3xl">Vela Dry Wash</CardTitle>
+          <CardTitle className="text-center text-2xl md:text-3xl">Laundry & Dry Wash</CardTitle>
           <p className="text-center text-xs md:text-sm opacity-90">Admin Portal Login</p>
         </CardHeader>
         <CardContent className="space-y-4 pt-6">

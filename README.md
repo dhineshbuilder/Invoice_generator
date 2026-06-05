@@ -1,6 +1,6 @@
-# Vela Dry Wash POS
+# Laundry & Dry Wash POS
 
-A lightweight web-based point-of-sale and receipt printing app for Vela Dry Wash. The app lets staff create laundry orders, calculate totals with round-off adjustments, store orders in Supabase, export transactions, and print 80mm thermal receipts.
+A lightweight web-based point-of-sale and receipt printing app for laundry and dry wash businesses. The app lets staff create laundry orders, calculate totals with round-off adjustments, store orders in Supabase, export transactions, and print 80mm thermal receipts.
 
 ## Links
 

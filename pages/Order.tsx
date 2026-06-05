@@ -180,16 +180,16 @@ export default function OrderPage() {
   };
 
   const logout = () => {
-    localStorage.removeItem("vdw_auth");
+    localStorage.removeItem("laundry_dry_wash_auth");
     navigate("/login");
   };
 
   return (
     <main className="min-h-screen bg-background">
-      <Seo title="New Order | Vela Dry Wash POS" description="Create a new laundry order, add items, and print an 80mm thermal receipt." canonicalPath="/order" />
+      <Seo title="New Order | Laundry & Dry Wash POS" description="Create a new laundry order, add items, and print an 80mm thermal receipt." canonicalPath="/order" />
       <header className="container py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold">VELA DRY WASH</h1>
+          <h1 className="text-2xl md:text-3xl font-bold">LAUNDRY & DRY WASH</h1>
         </div>
         <div className="flex gap-2 flex-wrap justify-end">
           <Button variant="secondary" onClick={() => navigate("/dashboard")}>Dashboard</Button>
